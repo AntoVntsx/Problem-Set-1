@@ -45,3 +45,36 @@ Progettate un algoritmo che calcola il massimo valore **∆′** ammissibile in 
 ## Argomentazione sulla correttezza
 
 L'algoritmo deve essere progettato in modo che possa determinare il massimo valore di **∆′** in tempo lineare, monitorando l'ordine di arrivo dei clienti e calcolando la quantità di tempo che ciascun cliente deve attendere prima di essere servito, senza superare il tempo di chiusura **M**.
+
+## Problema 3: Algo Run
+
+**Descrizione del problema**  
+Il gioco *Algo Run* è un arcade game ispirato a *Temple Run* in cui il protagonista, uno studente di algoritmi e strutture dati, corre lungo un corridoio suddiviso in `k` corsie parallele. Su ogni corsia ci sono delle sequenze di gettoni CFU (monete di gioco di diverso valore) che devono essere raccolti per vincere la partita. Ogni sequenza è descritta da una tupla `(si, ti, vi, ki)` dove:
+
+1. `si`: istante in cui la sequenza inizia,
+2. `ti`: istante in cui la sequenza termina,
+3. `vi`: valore di ciascun gettone,
+4. `ki`: corsia su cui si trova la sequenza.
+
+Assumiamo che:
+
+1. Ogni sequenza occupa un intervallo continuo lungo la corsia `ki`,
+2. Le sequenze lungo la stessa corsia non si sovrappongono mai, cioè se due sequenze appartengono alla stessa corsia, allora i loro intervalli non si sovrappongono.
+
+Il protagonista può saltare da una corsia all’altra e raccogliere automaticamente le monete quando passa sopra di esse. L’obiettivo è massimizzare il punteggio finale, che è pari alla somma dei valori delle monete raccolte.
+
+### Input
+
+- Un intero `k` che rappresenta il numero di corsie,
+- Un intero `n` che rappresenta il numero di sequenze di monete,
+- Una lista di `n` tuple `(si, ti, vi, ki)` che descrivono le sequenze di monete.
+
+### Esempio
+
+Consideriamo un esempio con 2 corsie e 4 sequenze di monete:
+
+- Sequenza 1: (1, 5, 10, 1)
+- Sequenza 2: (6, 10, 15, 1)
+- Sequenza 3: (2, 6, 20, 2)
+- Sequenza 4: (7, 11, 30, 2)
+  
