@@ -27,7 +27,6 @@ Progettare un algoritmo che, data una sequenza lunga **n** di parentesi aperte e
 L'algoritmo deve essere progettato in modo che possa determinare il minimo valore di **k** in tempo lineare, utilizzando una sola passata sulla sequenza. La correttezza dell'algoritmo può essere argomentata attraverso l'analisi della gestione delle parentesi aperte e chiuse, monitorando costantemente l'equilibrio della sequenza durante il processo.
 
 # Problema Il posto fisso
-# Problema delle pratiche all'ufficio postale
 
 Ti hanno recentemente assunto come unico impiegato al piccolo ufficio postale del tuo quartiere. Il lavoro non ti piace e lo fai controvoglia. Però, come dice tua madre, è un posto fisso e il posto fisso è perfetto per te che, come sottolinea sempre lei, sei una persona pigra.
 
